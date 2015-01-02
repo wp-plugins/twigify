@@ -6,4 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'WP_Mock' => $vendorDir . '/10up/wp_mock/WP_Mock.php',
 );

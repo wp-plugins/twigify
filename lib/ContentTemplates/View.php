@@ -9,7 +9,7 @@ use \Twig_Autoloader,
   Twig_Environment;
 use \ContentTemplates\Terms;
 use \ContentTemplates\Post;
-use \COntentTemplates\Functions;
+use \ContentTemplates\Functions;
 
 class View {
   private $cache;
@@ -30,9 +30,6 @@ class View {
   }
 
   public function render($content, $data) {
-    if (is_numeric($post)) {
-      get_post($post);
-    }
     if (file_exists(Plugin::get_views_dir()."/$content")) {
       return $this->render_from_file($content, $data);
     } else {

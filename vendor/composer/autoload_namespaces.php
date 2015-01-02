@@ -6,5 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'WP_Mock\\' => array($vendorDir . '/10up/wp_mock'),
     'Twig_' => array($vendorDir . '/twig/twig/lib'),
+    'Mockery' => array($vendorDir . '/mockery/mockery/library'),
 );
