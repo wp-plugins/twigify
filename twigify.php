@@ -9,9 +9,7 @@
 	Text Domain: twigify
 	Domain Path: /lang
 */
-ini_set('display_errors',1);
 define('CT_VERSION', '0.1-alpha');
-define('SCRIPT_DEBUG', true);
 
 // register autoloader
 spl_autoload_register('__ct_autoload');
