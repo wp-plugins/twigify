@@ -4,7 +4,7 @@ Donate link: http://mikevanwinkle.com/
 Tags: content, templating, twig, layout
 Requires at least: 4.0.1
 Tested up to: 4.1
-Stable tag: 1.1-beta
+Stable tag: 1.1.1-beta
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -54,4 +54,7 @@ No screenshots available yet
 * Initial release
 
 = 1.1-beta =
-* Theme Functions: get_bloginfo, get_sidebar, get_footer, the_time, comments_popup_link, the_title, the_category, the_author, the_ID, edit_post_link, wp_list_bookmarks, comments_template, wp_list_pages, wp_list_categories, get_post_meta, posts_nav_link, get_search_form, custom 
+* Theme Functions: get_bloginfo, get_sidebar, get_footer, the_time, comments_popup_link, the_title, the_category, the_author, the_ID, edit_post_link, wp_list_bookmarks, comments_template, wp_list_pages, wp_list_categories, get_post_meta, posts_nav_link, get_search_form, custom
+
+= 1.1.1-beta = 
+* removes debuging code accidentally left behind. 
