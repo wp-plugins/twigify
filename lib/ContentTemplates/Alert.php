@@ -9,7 +9,7 @@ class Alert {
 
   public static function instance() {
     if(!self::$instance) {
-      self::$instance = new Self();
+      self::$instance = new self();
     }
     return self::$instance;
   }

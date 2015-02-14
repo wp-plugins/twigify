@@ -4,12 +4,12 @@
 	Plugin URI: http://wordpress.org/extend/plugins/twigify-twigify
 	Description: Allows you to create content templates that will conditionally override the content of a post or page or customer post type
 	Author: Mike Van Winkle
-	Version: 1.1.1-beta
+	Version: 1.1.2-beta
 	Author URI: http://mikevanwinkle.com
 	Text Domain: twigify
 	Domain Path: /lang
 */
-define('CT_VERSION', '0.1-alpha');
+define('CT_VERSION', '1.1.2-beta');
 
 // register autoloader
 spl_autoload_register('__ct_autoload');
