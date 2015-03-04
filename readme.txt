@@ -4,7 +4,7 @@ Donate link: http://mikevanwinkle.com/
 Tags: content, templating, twig, layout
 Requires at least: 4.0.1
 Tested up to: 4.1
-Stable tag: 1.1.2-beta
+Stable tag: 1.2.0-beta
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,3 +61,6 @@ No screenshots available yet
 
 = 1.1.2-beta = 
 * lowercase self for compatibility with php 5.4
+
+= 1.2.0-beta = 
+* Adds global user/post capability. Also adds the is_user_logged_in() and current_user_can() functions. Cleans up some fields

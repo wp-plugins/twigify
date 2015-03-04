@@ -35,8 +35,8 @@ function ct_metaboxes( array $meta_boxes ) {
 	$prefix = 'ct_';
 
 	$meta_boxes['ct_post_metabox'] = array(
-		'id'        => 'Content Template',
-		'title'     => __( 'Content Template', 'content-templates' ),
+		'id'        => 'Twigify Template',
+		'title'     => __( 'Twigify Template', 'content-templates' ),
 		'desc'			=> 'You can set up global rules under the Content Templates >> Rules menu, or override for this template here',
 		'pages'     => apply_filters("ct_available_post_types", $post_types),
 		'context'   => 'side',
@@ -45,8 +45,7 @@ function ct_metaboxes( array $meta_boxes ) {
 		// 'cmb_styles' => true, // Enqueue the CMB stylesheet on the frontend
 		'fields'    => array(
 			array(
-				'name'      => __( 'Override', 'cmb' ),
-				'desc'      => __( 'Override content template to use', 'cmb' ),
+				'desc'      => __( 'Select template to use for this post/page.', 'cmb' ),
 				'id'        => "{$prefix}override_template",
 				'type'      => 'select',
 				'options'	=> $options,

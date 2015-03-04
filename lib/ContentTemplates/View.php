@@ -3,13 +3,15 @@ namespace ContentTemplates;
 
 use \ContentTemplates\Rules;
 use \ContentTemplatesPlugin as Plugin;
-use \Twig_Autoloader,
-  Twig_Loader_String,
-  Twig_Loader_Filesystem,
-  Twig_Environment;
 use \ContentTemplates\Terms;
 use \ContentTemplates\Post;
 use \ContentTemplates\Functions;
+use \ContentTemplates\User;
+use \Twig_Autoloader,
+  Twig_Loader_String,
+  Twig_Loader_Filesystem,
+  Twig_Environment,
+  Twig_SimpleFunction;
 
 class View {
   private $cache;
@@ -59,6 +61,10 @@ class View {
     $this->env->addGlobal( 'terms', new Terms() );
     $this->env->addGLobal( 'query', new Query() );
     $this->env->addGlobal( 'function', new Functions() );
+    $this->env->addFunction( new Twig_SimpleFunction( 'is_user_logged_in', function() { return is_user_logged_in(); } ) );
+    $this->env->addFunction( new Twig_SimpleFunction( 'current_user_can', function($privilege) { return current_user_can($privilege); } ) );
+    $this->env->addGlobal( 'user', new User() );
+    $this->env->addGlobal( 'post', new Post() );
   }
 
   public static function hook($content,$post=null) {
